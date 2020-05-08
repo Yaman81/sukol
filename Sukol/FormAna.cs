@@ -54,6 +54,7 @@ namespace Sukol
 
             kullanici.profilfoto = profilfoto;
             if (File.Exists(profilfoto)) pictureBox_profilFoto.Image = Image.FromFile(@profilfoto);
+            else pictureBox_profilFoto.Image = null;
 
             button_profilFoto.Visible = true;
             pictureBox_profilFoto.Visible = true;
@@ -190,7 +191,7 @@ namespace Sukol
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            new KullaniciEkle().ShowDialog();
+            new KullaniciEkleme.KullaniciEkle(gorevli).ShowDialog();
         }
     }
 }
