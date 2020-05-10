@@ -325,9 +325,6 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel_gorevli);
-            this.Controls.Add(this.panel_ana_sayfa);
-            this.Controls.Add(this.panel_hesapMakinesi);
             this.Controls.Add(this.panel_ogrenci);
             this.Controls.Add(this.label_sansliSayi);
             this.Controls.Add(this.label_rollerYazan);
@@ -340,6 +337,9 @@
             this.Controls.Add(this.labelIsim);
             this.Controls.Add(this.sukol_icon);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.panel_gorevli);
+            this.Controls.Add(this.panel_ana_sayfa);
+            this.Controls.Add(this.panel_hesapMakinesi);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;

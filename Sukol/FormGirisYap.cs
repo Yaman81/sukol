@@ -26,7 +26,7 @@ namespace Sukol
                 " kullanicilar.isim as kullanici_isim," +
                 " kullanicilar.soyisim as kullanici_soyisim," +
                 " kullanicilar.profilfoto as profilfoto," +
-
+                 
                 " kullanicilar.ogrenci as kullanici_ogrenci," +
                 " kullanicilar.ogretmen as kullanici_ogretmen," +
                 " kullanicilar.gorevli as kullanici_gorevli," +
