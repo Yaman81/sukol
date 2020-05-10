@@ -34,7 +34,9 @@
             this.görevliToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.öğrenciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.öğretmenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hesapMakinesiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.diğerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hesapMakinesiToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.okulRadyosuToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.sukol_icon = new System.Windows.Forms.PictureBox();
             this.websitemiz_button = new System.Windows.Forms.Button();
             this.hakkimizda_button = new System.Windows.Forms.Button();
@@ -54,6 +56,24 @@
             this.label_roller = new System.Windows.Forms.Label();
             this.label_rollerYazan = new System.Windows.Forms.Label();
             this.panel_gorevli = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button_duyuruEkle = new System.Windows.Forms.Button();
+            this.button_YeniSinif = new System.Windows.Forms.Button();
+            this.textBox_yeniSinif = new System.Windows.Forms.TextBox();
+            this.label_yeniSinif = new System.Windows.Forms.Label();
+            this.listView_sinifOgretmen = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listView_sinifOgrenci = new System.Windows.Forms.ListView();
+            this.isim_soyisim = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.numara = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.k_adi = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.sifre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label_sinifOgretmenListesi = new System.Windows.Forms.Label();
+            this.label_sinifOgrenciListesi = new System.Windows.Forms.Label();
+            this.label_siniflar = new System.Windows.Forms.Label();
+            this.listBox_siniflar = new System.Windows.Forms.ListBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label_sansliSayi = new System.Windows.Forms.Label();
             this.panel_hesapMakinesi = new System.Windows.Forms.Panel();
@@ -67,6 +87,13 @@
             this.button4 = new System.Windows.Forms.Button();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.openFileDialog_radyo = new System.Windows.Forms.OpenFileDialog();
+            this.panel_okulRadyo = new System.Windows.Forms.Panel();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.button_oynat = new System.Windows.Forms.Button();
+            this.button_duraklat = new System.Windows.Forms.Button();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.button_ogrenci_duyuru = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sukol_icon)).BeginInit();
             this.panel_ana_sayfa.SuspendLayout();
@@ -74,6 +101,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_profilFoto)).BeginInit();
             this.panel_gorevli.SuspendLayout();
             this.panel_hesapMakinesi.SuspendLayout();
+            this.panel_okulRadyo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -83,7 +113,7 @@
             this.görevliToolStripMenuItem,
             this.öğrenciToolStripMenuItem,
             this.öğretmenToolStripMenuItem,
-            this.hesapMakinesiToolStripMenuItem});
+            this.diğerToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
@@ -110,11 +140,25 @@
             resources.ApplyResources(this.öğretmenToolStripMenuItem, "öğretmenToolStripMenuItem");
             this.öğretmenToolStripMenuItem.Name = "öğretmenToolStripMenuItem";
             // 
-            // hesapMakinesiToolStripMenuItem
+            // diğerToolStripMenuItem
             // 
-            this.hesapMakinesiToolStripMenuItem.Name = "hesapMakinesiToolStripMenuItem";
-            resources.ApplyResources(this.hesapMakinesiToolStripMenuItem, "hesapMakinesiToolStripMenuItem");
-            this.hesapMakinesiToolStripMenuItem.Click += new System.EventHandler(this.hesapMakinesiToolStripMenuItem_Click);
+            this.diğerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hesapMakinesiToolStripMenuItem1,
+            this.okulRadyosuToolStripMenuItem1});
+            this.diğerToolStripMenuItem.Name = "diğerToolStripMenuItem";
+            resources.ApplyResources(this.diğerToolStripMenuItem, "diğerToolStripMenuItem");
+            // 
+            // hesapMakinesiToolStripMenuItem1
+            // 
+            this.hesapMakinesiToolStripMenuItem1.Name = "hesapMakinesiToolStripMenuItem1";
+            resources.ApplyResources(this.hesapMakinesiToolStripMenuItem1, "hesapMakinesiToolStripMenuItem1");
+            this.hesapMakinesiToolStripMenuItem1.Click += new System.EventHandler(this.hesapMakinesiToolStripMenuItem1_Click);
+            // 
+            // okulRadyosuToolStripMenuItem1
+            // 
+            this.okulRadyosuToolStripMenuItem1.Name = "okulRadyosuToolStripMenuItem1";
+            resources.ApplyResources(this.okulRadyosuToolStripMenuItem1, "okulRadyosuToolStripMenuItem1");
+            this.okulRadyosuToolStripMenuItem1.Click += new System.EventHandler(this.okulRadyosuToolStripMenuItem1_Click);
             // 
             // sukol_icon
             // 
@@ -189,6 +233,7 @@
             // 
             // panel_ogrenci
             // 
+            this.panel_ogrenci.Controls.Add(this.button_ogrenci_duyuru);
             this.panel_ogrenci.Controls.Add(this.button2);
             resources.ApplyResources(this.panel_ogrenci, "panel_ogrenci");
             this.panel_ogrenci.Name = "panel_ogrenci";
@@ -230,9 +275,126 @@
             // 
             // panel_gorevli
             // 
+            this.panel_gorevli.Controls.Add(this.button5);
+            this.panel_gorevli.Controls.Add(this.button_duyuruEkle);
+            this.panel_gorevli.Controls.Add(this.button_YeniSinif);
+            this.panel_gorevli.Controls.Add(this.textBox_yeniSinif);
+            this.panel_gorevli.Controls.Add(this.label_yeniSinif);
+            this.panel_gorevli.Controls.Add(this.listView_sinifOgretmen);
+            this.panel_gorevli.Controls.Add(this.listView_sinifOgrenci);
+            this.panel_gorevli.Controls.Add(this.label_sinifOgretmenListesi);
+            this.panel_gorevli.Controls.Add(this.label_sinifOgrenciListesi);
+            this.panel_gorevli.Controls.Add(this.label_siniflar);
+            this.panel_gorevli.Controls.Add(this.listBox_siniflar);
             this.panel_gorevli.Controls.Add(this.button3);
             resources.ApplyResources(this.panel_gorevli, "panel_gorevli");
             this.panel_gorevli.Name = "panel_gorevli";
+            // 
+            // button5
+            // 
+            resources.ApplyResources(this.button5, "button5");
+            this.button5.Name = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button_duyuruEkle
+            // 
+            resources.ApplyResources(this.button_duyuruEkle, "button_duyuruEkle");
+            this.button_duyuruEkle.Name = "button_duyuruEkle";
+            this.button_duyuruEkle.UseVisualStyleBackColor = true;
+            this.button_duyuruEkle.Click += new System.EventHandler(this.button_duyuruEkle_Click);
+            // 
+            // button_YeniSinif
+            // 
+            resources.ApplyResources(this.button_YeniSinif, "button_YeniSinif");
+            this.button_YeniSinif.Name = "button_YeniSinif";
+            this.button_YeniSinif.UseVisualStyleBackColor = true;
+            this.button_YeniSinif.Click += new System.EventHandler(this.button_YeniSinif_Click);
+            // 
+            // textBox_yeniSinif
+            // 
+            resources.ApplyResources(this.textBox_yeniSinif, "textBox_yeniSinif");
+            this.textBox_yeniSinif.Name = "textBox_yeniSinif";
+            // 
+            // label_yeniSinif
+            // 
+            resources.ApplyResources(this.label_yeniSinif, "label_yeniSinif");
+            this.label_yeniSinif.Name = "label_yeniSinif";
+            // 
+            // listView_sinifOgretmen
+            // 
+            this.listView_sinifOgretmen.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.listView_sinifOgretmen.HideSelection = false;
+            resources.ApplyResources(this.listView_sinifOgretmen, "listView_sinifOgretmen");
+            this.listView_sinifOgretmen.Name = "listView_sinifOgretmen";
+            this.listView_sinifOgretmen.UseCompatibleStateImageBehavior = false;
+            this.listView_sinifOgretmen.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            resources.ApplyResources(this.columnHeader1, "columnHeader1");
+            // 
+            // columnHeader2
+            // 
+            resources.ApplyResources(this.columnHeader2, "columnHeader2");
+            // 
+            // columnHeader3
+            // 
+            resources.ApplyResources(this.columnHeader3, "columnHeader3");
+            // 
+            // listView_sinifOgrenci
+            // 
+            this.listView_sinifOgrenci.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.isim_soyisim,
+            this.numara,
+            this.k_adi,
+            this.sifre});
+            this.listView_sinifOgrenci.HideSelection = false;
+            resources.ApplyResources(this.listView_sinifOgrenci, "listView_sinifOgrenci");
+            this.listView_sinifOgrenci.Name = "listView_sinifOgrenci";
+            this.listView_sinifOgrenci.UseCompatibleStateImageBehavior = false;
+            this.listView_sinifOgrenci.View = System.Windows.Forms.View.Details;
+            // 
+            // isim_soyisim
+            // 
+            resources.ApplyResources(this.isim_soyisim, "isim_soyisim");
+            // 
+            // numara
+            // 
+            resources.ApplyResources(this.numara, "numara");
+            // 
+            // k_adi
+            // 
+            resources.ApplyResources(this.k_adi, "k_adi");
+            // 
+            // sifre
+            // 
+            resources.ApplyResources(this.sifre, "sifre");
+            // 
+            // label_sinifOgretmenListesi
+            // 
+            resources.ApplyResources(this.label_sinifOgretmenListesi, "label_sinifOgretmenListesi");
+            this.label_sinifOgretmenListesi.Name = "label_sinifOgretmenListesi";
+            // 
+            // label_sinifOgrenciListesi
+            // 
+            resources.ApplyResources(this.label_sinifOgrenciListesi, "label_sinifOgrenciListesi");
+            this.label_sinifOgrenciListesi.Name = "label_sinifOgrenciListesi";
+            // 
+            // label_siniflar
+            // 
+            resources.ApplyResources(this.label_siniflar, "label_siniflar");
+            this.label_siniflar.Name = "label_siniflar";
+            // 
+            // listBox_siniflar
+            // 
+            this.listBox_siniflar.FormattingEnabled = true;
+            resources.ApplyResources(this.listBox_siniflar, "listBox_siniflar");
+            this.listBox_siniflar.Name = "listBox_siniflar";
+            this.listBox_siniflar.SelectedIndexChanged += new System.EventHandler(this.listBox_siniflar_SelectedIndexChanged);
             // 
             // button3
             // 
@@ -321,11 +483,61 @@
             this.radioButton4.TabStop = true;
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
+            // openFileDialog_radyo
+            // 
+            this.openFileDialog_radyo.FileName = "openFileDialog1";
+            resources.ApplyResources(this.openFileDialog_radyo, "openFileDialog_radyo");
+            // 
+            // panel_okulRadyo
+            // 
+            this.panel_okulRadyo.Controls.Add(this.trackBar1);
+            this.panel_okulRadyo.Controls.Add(this.button_oynat);
+            this.panel_okulRadyo.Controls.Add(this.button_duraklat);
+            this.panel_okulRadyo.Controls.Add(this.axWindowsMediaPlayer1);
+            resources.ApplyResources(this.panel_okulRadyo, "panel_okulRadyo");
+            this.panel_okulRadyo.Name = "panel_okulRadyo";
+            // 
+            // trackBar1
+            // 
+            resources.ApplyResources(this.trackBar1, "trackBar1");
+            this.trackBar1.Maximum = 100;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
+            // button_oynat
+            // 
+            resources.ApplyResources(this.button_oynat, "button_oynat");
+            this.button_oynat.Name = "button_oynat";
+            this.button_oynat.UseVisualStyleBackColor = true;
+            this.button_oynat.Click += new System.EventHandler(this.button_oynat_Click);
+            // 
+            // button_duraklat
+            // 
+            resources.ApplyResources(this.button_duraklat, "button_duraklat");
+            this.button_duraklat.Name = "button_duraklat";
+            this.button_duraklat.UseVisualStyleBackColor = true;
+            this.button_duraklat.Click += new System.EventHandler(this.button_duraklat_Click);
+            // 
+            // axWindowsMediaPlayer1
+            // 
+            resources.ApplyResources(this.axWindowsMediaPlayer1, "axWindowsMediaPlayer1");
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            // 
+            // button_ogrenci_duyuru
+            // 
+            resources.ApplyResources(this.button_ogrenci_duyuru, "button_ogrenci_duyuru");
+            this.button_ogrenci_duyuru.Name = "button_ogrenci_duyuru";
+            this.button_ogrenci_duyuru.UseVisualStyleBackColor = true;
+            this.button_ogrenci_duyuru.Click += new System.EventHandler(this.button_ogrenci_duyuru_Click);
+            // 
             // FormAna
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel_ogrenci);
+            this.Controls.Add(this.panel_ana_sayfa);
+            this.Controls.Add(this.panel_hesapMakinesi);
             this.Controls.Add(this.label_sansliSayi);
             this.Controls.Add(this.label_rollerYazan);
             this.Controls.Add(this.label_roller);
@@ -338,8 +550,7 @@
             this.Controls.Add(this.sukol_icon);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel_gorevli);
-            this.Controls.Add(this.panel_ana_sayfa);
-            this.Controls.Add(this.panel_hesapMakinesi);
+            this.Controls.Add(this.panel_okulRadyo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
@@ -353,8 +564,13 @@
             this.panel_ogrenci.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_profilFoto)).EndInit();
             this.panel_gorevli.ResumeLayout(false);
+            this.panel_gorevli.PerformLayout();
             this.panel_hesapMakinesi.ResumeLayout(false);
             this.panel_hesapMakinesi.PerformLayout();
+            this.panel_okulRadyo.ResumeLayout(false);
+            this.panel_okulRadyo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,7 +604,6 @@
         private System.Windows.Forms.Panel panel_gorevli;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label_sansliSayi;
-        private System.Windows.Forms.ToolStripMenuItem hesapMakinesiToolStripMenuItem;
         private System.Windows.Forms.Panel panel_hesapMakinesi;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label_hesapmakSonuc;
@@ -400,6 +615,34 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_siniflar;
+        private System.Windows.Forms.ListBox listBox_siniflar;
+        private System.Windows.Forms.ListView listView_sinifOgretmen;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ListView listView_sinifOgrenci;
+        private System.Windows.Forms.ColumnHeader isim_soyisim;
+        private System.Windows.Forms.ColumnHeader numara;
+        private System.Windows.Forms.Label label_sinifOgretmenListesi;
+        private System.Windows.Forms.Label label_sinifOgrenciListesi;
+        private System.Windows.Forms.Button button_YeniSinif;
+        private System.Windows.Forms.TextBox textBox_yeniSinif;
+        private System.Windows.Forms.Label label_yeniSinif;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader k_adi;
+        private System.Windows.Forms.ColumnHeader sifre;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button_duyuruEkle;
+        private System.Windows.Forms.OpenFileDialog openFileDialog_radyo;
+        private System.Windows.Forms.ToolStripMenuItem diğerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hesapMakinesiToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem okulRadyosuToolStripMenuItem1;
+        private System.Windows.Forms.Panel panel_okulRadyo;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.Button button_oynat;
+        private System.Windows.Forms.Button button_duraklat;
+        private System.Windows.Forms.Button button_ogrenci_duyuru;
     }
 }
 

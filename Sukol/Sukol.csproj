@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -53,6 +68,24 @@
     <Compile Include="AboutWindow.Designer.cs">
       <DependentUpon>AboutWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="DuyuruEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DuyuruEkle.Designer.cs">
+      <DependentUpon>DuyuruEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DuyuruItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DuyuruItem.Designer.cs">
+      <DependentUpon>DuyuruItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DuyuruPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DuyuruPaneli.Designer.cs">
+      <DependentUpon>DuyuruPaneli.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAna.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +118,12 @@
     <Compile Include="KullaniciEkleme\OgretmenEkle.Designer.cs">
       <DependentUpon>OgretmenEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ogrenci.cs" />
     <Compile Include="Ogretmen.cs" />
     <Compile Include="Program.cs" />
@@ -92,6 +131,15 @@
     <Compile Include="Veritabani.cs" />
     <EmbeddedResource Include="AboutWindow.resx">
       <DependentUpon>AboutWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DuyuruEkle.resx">
+      <DependentUpon>DuyuruEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DuyuruItem.resx">
+      <DependentUpon>DuyuruItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DuyuruPaneli.resx">
+      <DependentUpon>DuyuruPaneli.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAna.resx">
       <DependentUpon>FormAna.cs</DependentUpon>
@@ -108,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KullaniciEkleme\OgretmenEkle.resx">
       <DependentUpon>OgretmenEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -130,6 +181,32 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
